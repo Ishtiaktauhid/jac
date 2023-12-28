@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positive Integer</title>
+</head>
+<body>
+    <h1>Ans to the Question No 5</h1>
+    <form action="">
+        <label for=""> Number</label>
+        <input type="text" id="user_input">
+        <button type="button" onclick="fun()">Check</button>
+        <div id="msg"></div>
+    </form>
+
+    <script>
+        let sumnum=0;
+        function fun(){
+            let user_input=parseInt(document.getElementById('user_input').value);
+            if(user_input>=0){
+                sumnum +=user_input;
+            }
+            else{
+                document.getElementById('msg').innerHTML=sumnum;
+            }
+        }
+    </script>
+</body>
+</html>

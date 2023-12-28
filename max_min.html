@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max_Min Number</title>
+</head>
+<body>
+    <h1>Ans to the Question No 3</h1>
+    <form action="">
+        <label for="">Number(use CSV format)</label>
+        <input type="text" id="num">
+        <button type="button" onclick="fun()">Check</button>
+        <div id="msg"></div>
+    </form>
+
+    <script>
+        function fun(){
+            let  n=document.getElementById('num').value;
+            let num= n.split(',').map(Number);
+            let max=num[0];
+            let min=num[0];
+            for(let i of num){
+                if(max < i){
+                    max=i;
+                }
+                if(min > i){
+                    min=i;
+                }
+            }
+            document.getElementById('msg').innerHTML="Min Number ="+min+"<br>Max Number ="+max;
+        }
+    </script>
+</body>
+</html>

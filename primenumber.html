@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <h1>Ans to the Question No 2</h1>
+    <form action="">
+        <label for="">Prime Number</label>
+        <input type="text" id="user_input">
+        <button type="button" onclick="fun()">Check</button>
+        <div id="msg"></div>
+    </form>
+    <script>
+     function fun(){
+        let user_input=document.getElementById('user_input').value;
+        let msg='This is a Prime number';
+        for(let i=2; i<user_input; i++){
+            if(user_input%i==0){
+                msg='This is not a prime Number';
+            }
+        }
+        document.getElementById('msg').innerHTML=msg;
+     }
+    </script>
+</body>
+</html>
